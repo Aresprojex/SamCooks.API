@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace SamCooks.API.Entities
 {
-    public class Era : BaseEntity 
+    public class Keyword : BaseEntity
     {
-        public string Date { get; set; }
+        public string Word { get; set; }
     }
 }
