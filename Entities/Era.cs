@@ -8,5 +8,7 @@ namespace SamCooks.API.Entities
     public class Era : BaseEntity 
     {
         public string Date { get; set; }
+
+        public List<Artist> EraArtist { get; set; }
     }
 }
