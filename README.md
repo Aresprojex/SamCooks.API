@@ -14,6 +14,7 @@
 2. [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloads/)
 3. SQL Server 2019 or navigate to the [link](https://www.microsoft.com/en-gb/sql-server/sql-server-downloads)
 4. MSSM 19 - click [Microsoft SQL management studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+   
 
 ## Getting Started
 1. Clone the repository to your local machine
