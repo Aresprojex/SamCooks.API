@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 
 namespace SamCooks.API.DTO
 {
-    public class GetArtists
+    public class ArtistEraDto
     {
+        public Guid Id { get; set; }
+        public string Era { get; set; }
     }
 }
