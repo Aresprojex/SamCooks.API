@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SamCooks.API.DTO;
 using SamCooks.API.Helpers;
+using SamCooks.API.Services;
 using SamCooks.API.Utilities;
 using System;
 using System.Collections.Generic;
@@ -14,14 +15,20 @@ namespace SamCooks.API.Controllers
     [ApiController]
     public class ArtistController : BaseController
     {
+        private readonly IArtistService _artistService;
+        public ArtistController(IArtistService artistService)
+        {
+            _artistService = artistService;
+        }
+
         [HttpGet]
-        [ProducesResponseType(typeof(BaseResponse<GetArtists>), 200)]
+        [ProducesResponseType(typeof(BaseResponse<IEnumerable<ArtistsDto>>), 200)]
         public async Task<IActionResult> Artist([FromQuery] BaseSearchViewModel model)
         {
 
             try
             {
-                return ReturnResponse(await _cardService.GetArstis(model));
+                return ReturnResponse(await _artistService.GettAll(model));
             }
             catch (Exception ex)
             {
