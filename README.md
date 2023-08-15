@@ -34,8 +34,8 @@
 2. In the Package Manager Console, ensure that the default project is set to SamCooks.API.
 3. Run the following command to apply pending migrations and update the database:
    `Update-Database`
-   Hit enter to enxcute this command
-   This command will apply any pending migrations to the database and bring it up to date with the latest schema.
+   Hit enter to execute this command
+This command will apply any pending migrations to the database and bring it up to date with the latest schema.
 ![Screenshot (123)](https://github.com/Aresprojex/SamCooks.API/assets/130857532/1653ecca-edfe-4491-85a8-aebe2f350767)
 
 4. Open MSSM and confirm that the Database is created.
