@@ -17,15 +17,13 @@ namespace SamCooks.API.Mappings
             eras.Add(new Era
             {
                 Id = Guid.Parse("2fd8696a-414b-41e7-a661-b0dbddc309fa"),
-                Date = "1995",
-                CreatedOn = DateTime.UtcNow
+                Date = "1995"
             });
 
             eras.Add(new Era
             {
                 Id = Guid.Parse("24889416-93f3-44ee-a240-d3d03c5acdd2"),
-                Date = "1999",
-                CreatedOn = DateTime.UtcNow
+                Date = "1999"
             });
 
             builder.HasData(eras);
