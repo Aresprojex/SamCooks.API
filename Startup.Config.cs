@@ -159,60 +159,13 @@ namespace SamCooks.API
             //services.AddSingleton<IFileProvider>(new PhysicalFileProvider(Path.Combine(HostingEnvironment.ContentRootPath, Configuration.GetValue<string>("FilePath"))));
             //services.AddSignalR();
 
-            //services.AddTransient<DbContext, ApplicationDbContext>();
+            services.AddTransient<ApplicationDbContext>();
             services.AddScoped<IArtistService, ArtistService>();
-            //services.AddScoped<INotificationService, NotificationService>();
-            //services.AddScoped<IEmailService, EmailService>();
-            //services.AddScoped<IBgJobService, BackgroundService>();
-            //services.AddScoped<IAuthenticationService, AuthenticationService>();
-            //services.AddScoped<IEncrypt, EncryptService>();
-            //services.AddScoped<IDenominationService, DenominationService>();
-            //services.AddScoped<ICountryService, CountryService>();
-            //services.AddScoped<ITermsService, TermsService>();
-            //services.AddScoped<ITransactionService, TransactionService>();
-            //services.AddScoped<IPushNotificationService, PushNotificationService>();
-            //services.AddScoped<IReceiptService, ReceiptService>();
-            //services.AddScoped<ICardService, CardService>();
-            //services.AddScoped<ICardSaleService, CardSaleService>();
-            //services.AddScoped<IPrefixService, PrefixService>();
-            //services.AddScoped<IUserService, UserService>();
-            //services.AddScoped<IDashboardService, DashboardService>();
-            //services.AddScoped<ICloudinaryServices, CloudinaryUploadHelper>();
-            //services.AddScoped<IFaqService, FaqService>();
-            //services.AddScoped<IAdService, AdService>();
-            //services.AddScoped<ISettingService, SettingService>();
-            //services.AddScoped<IReferralService, ReferralService>();
-
-
-
             //services.Configure<SmtpConfigSettings>(Configuration.GetSection("SmtpConfig"));
-
-            //services.Configure<FcmNotification>(Configuration.GetSection("FcmNotification"));
-
-            //services.Configure<CloudinaryAccount>(Configuration.GetSection("Cloudinary"));
-
-            //services.Configure<EmailLinkDTO>(options =>
-            // Configuration.GetSection(nameof(EmailLinkDTO)).Bind(options));
-
 
             //// Setup PolicyBase Authorization
             //services.AddSingleton<IAuthorizationPolicyProvider, AuthorizationPolicyProvider>();
             //services.AddSingleton<IAuthorizationHandler, ActionRequirementHandler>();
-
-            //services.AddHangfire(configuration => configuration
-            //   .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
-            //   .UseSimpleAssemblyNameTypeSerializer()
-            //   .UseRecommendedSerializerSettings()
-            //   .UseSqlServerStorage(Configuration.GetConnectionString("DefaultConnection"), new SqlServerStorageOptions
-            //   {
-            //       CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
-            //       SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
-            //       QueuePollInterval = TimeSpan.Zero,
-            //       UseRecommendedIsolationLevel = true,
-            //       DisableGlobalLocks = true
-            //   }));
-
-            //services.AddHangfireServer();
 
         }
     }
