@@ -24,6 +24,6 @@ namespace SamCooks.API.Entities
 
         public string LinkedLyrics { get; set; }
 
-        public List<Keyword> Keywords { get; set; }
+        public List<SongKeyword> Keywords { get; set; }
     }
 }
