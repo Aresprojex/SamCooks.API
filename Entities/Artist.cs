@@ -11,7 +11,7 @@ namespace SamCooks.API.Entities
         public string Bio { get; set; }
         public List<Song> Songs { get; set; }
         public int TotalSongs { get; set; }
-        public List<Era> Eras { get; set; }
+        public List<ArtistEra> Eras { get; set; }
         public string Location { get; set; }
         public string Region { get; set; }
     }
