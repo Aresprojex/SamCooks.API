@@ -7,6 +7,7 @@ namespace SamCooks.API.DTO
 {
     public class ArtistsDto
     {
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Bio { get; set; }
         public int TotalSongs { get; set; }

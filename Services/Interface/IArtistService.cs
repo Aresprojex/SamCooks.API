@@ -11,5 +11,8 @@ namespace SamCooks.API.Services
     public interface IArtistService
     {
         Task<BaseResponse<IEnumerable<ArtistsDto>>> GettAll(BaseSearchViewModel search);
+
+        Task<BaseResponse<ArtistDto>> Get(Guid artistId);
+        Task<BaseResponse<ArtistDto>> Create(CreateArtistDto model);
     }
 }
