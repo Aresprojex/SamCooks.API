@@ -29,7 +29,7 @@ namespace SamCooks.API.Controllers
 
             try
             {
-                return ReturnResponse(await _artistService.GettAll(model));
+                return ReturnResponse(await _artistService.GetAll(model));
             }
             catch (Exception ex)
             {

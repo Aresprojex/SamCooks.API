@@ -93,7 +93,7 @@ namespace SamCooks.API.Services
         }
 
         // To Do: Use Automapper
-        public async Task<BaseResponse<IEnumerable<ArtistsDto>>> GettAll(BaseSearchViewModel search)
+        public async Task<BaseResponse<IEnumerable<ArtistsDto>>> GetAll(BaseSearchViewModel search)
         {
             var allArtists = await _dbContext.Artists
                 .Select(x => new ArtistsDto { 

@@ -17,6 +17,7 @@ namespace SamCooks.API.DbContext
 
         }
         public DbSet<Artist> Artists { get; set; }
+        public DbSet<Song> Songs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

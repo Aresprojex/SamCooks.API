@@ -161,6 +161,7 @@ namespace SamCooks.API
 
             services.AddTransient<ApplicationDbContext>();
             services.AddScoped<IArtistService, ArtistService>();
+            services.AddScoped<ISongService, SongService>();
             //services.Configure<SmtpConfigSettings>(Configuration.GetSection("SmtpConfig"));
 
             //// Setup PolicyBase Authorization
