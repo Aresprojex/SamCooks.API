@@ -19,7 +19,7 @@ namespace SamCooks.API.DTO
 
         public string OverallTheme { get; set; }
 
-        public ArtistDto Artist { get; set; }
+        public SongArtistDto Artist { get; set; }
 
         public string LinkedLyrics { get; set; }
     }

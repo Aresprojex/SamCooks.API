@@ -21,7 +21,7 @@ namespace SamCooks.API.Services
         }
         public async Task<BaseResponse<IEnumerable<SongDto>>> GetAll(BaseSearchViewModel search)
         {
-            var songs = await _dbContext.Songs.Select(x => new SongDto
+            var songs = await _dbContext.Song.Select(x => new SongDto
             {
                 CulturallySignificant = x.CulturallySignificant,
                 ReasonOfSelection = x.ReasonOfSelection,
@@ -30,11 +30,11 @@ namespace SamCooks.API.Services
                 Name = x.Name,
                 OverallTheme = x.OverallTheme,
                 Id = x.Id,
-                Artist = new ArtistDto
+                Artist = new SongArtistDto
                 {
                     Name = x.Artist.Name,
-                    Region = x.Artist.Region,
-                    Location = x.Artist.Location
+                    Bio = x.Artist.Bio,
+                    Id = x.ArtistId
                 }
             }).ToListAsync();
 

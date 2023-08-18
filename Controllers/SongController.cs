@@ -25,7 +25,7 @@ namespace SamCooks.API.Controllers
         [HttpGet]
         [Route("all")]
         [ProducesResponseType(typeof(BaseResponse<IEnumerable<SongDto>>), 200)]
-        public async Task<IActionResult> ArtistAll([FromQuery] BaseSearchViewModel model)
+        public async Task<IActionResult> GetAll([FromQuery] BaseSearchViewModel model)
         {
 
             try
